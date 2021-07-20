@@ -15,7 +15,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  background-color: #404040;
+  background-color: #404548;
 }
 
 #headerBar {
@@ -36,7 +36,7 @@ html {
 }
 
 #introName {
-  background-color: #27443c;
+  background-color: #262626;
   color: white;
   text-align: center;
   size: auto;
@@ -52,6 +52,34 @@ html {
   display: inline-block;
 }
 
+.navbar {
+  position: absolute;
+
+  top: 350px;
+  width: 100%;
+  background-color: #262626;
+  color: #859093;
+  text-decoration: none;
+}
+
+/*.dropdown-menu {*/
+/*  background-color: #262626;*/
+/*  color: #859093;*/
+/*}*/
+
+a {
+  color: inherit;
+}
+a:hover {
+  color: white;
+}
+
+
+.aboutMeText {
+  position: absolute;
+  top: 450px;
+  left: 100px;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
