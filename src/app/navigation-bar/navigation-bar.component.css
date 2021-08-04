@@ -1,0 +1,36 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.navSpacer{
+  padding-left: 3px;
+  padding-right: 3px;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  /*-khtml-user-select: none;*/
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+mat-toolbar{
+  font-size: medium;
+}
+
+button{
+  font-size: medium;
+  padding-left: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+}
