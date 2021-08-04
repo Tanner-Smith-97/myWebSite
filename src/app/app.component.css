@@ -1,0 +1,37 @@
+.parent{
+  position: relative;
+  /*padding: 7px;*/
+}
+
+.child{
+  /*padding: 20px;*/
+  /*position: absolute;*/
+  position: sticky;
+  position: -webkit-sticky; /* safari */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.content{
+  /*color: white;*/
+  /*margin-left: 40px;*/
+  margin-top: 20px;
+  /*padding-left: 40px;*/
+}
+
+/*.navbar {*/
+/*  position: absolute;*/
+
+/*  top: 100px;*/
+/*  width: 100%;*/
+/*  background-color: #262626;*/
+/*  color: #859093;*/
+/*  text-decoration: none;*/
+/*}*/
+
+
+/*#headerBar > * {*/
+/*  position: absolute;*/
+/*}*/

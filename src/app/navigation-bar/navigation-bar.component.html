@@ -1,0 +1,35 @@
+<mat-toolbar>
+  <a class="mat-focus-indicator" docs-button mat-button mat-button-base routerLink="/">HOME</a>
+  <span class="navSpacer">/</span>
+  <a class="mat-focus-indicator" docs-button mat-button mat-button-base routerLink="/about-me">ABOUT ME</a>
+  <span class="navSpacer">/</span>
+
+  <a class="mat-focus-indicator" mat-button mat-button-base [matMenuTriggerFor]="belowMenu">COURSE WORK</a>
+  <mat-menu #belowMenu="matMenu">
+    <button mat-menu-item><a href="https://www.google.com/">1018 Linux Essentials</a></button>
+    <button mat-menu-item>SDEV 1022 HTML/CSS Basics</button>
+    <button mat-menu-item>SDEV 1041 SQL Programming Fundamentals</button>
+    <button mat-menu-item>SDEV 1060 Unit Testing</button>
+    <button mat-menu-item>SDEV 1090 Version control Fundamentals</button>
+    <button mat-menu-item>SDEV 2210 Java Programming I</button>
+    <button mat-menu-item>SDEV 2220 Java Programming II</button>
+    <button mat-menu-item>SDEV 2410 C#</button>
+    <button mat-menu-item>SDEV 2420 C#</button>
+  </mat-menu>
+
+  <span class="navSpacer">/</span>
+  <a class="mat-focus-indicator" docs-button mat-button mat-button-base href="#">BLOG</a>
+  <span class="navSpacer">/</span>
+  <a class="mat-focus-indicator" docs-button mat-button mat-button-base href="#">CONTACT ME</a>
+
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
+
+
+

@@ -1,0 +1,39 @@
+#headerBar {
+  background-color: #50dfb3;
+  /*background-color: -moz-default-color;*/
+  /*position: absolute;*/
+  text-align: center;
+  -moz-text-size-adjust: auto;
+  top: 0;
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+/*ya I don't know how to center a div./......*/
+.headerContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#introName {
+  background-color: #262626;
+  color: white;
+  text-align: center;
+  size: auto;
+  /*position: relative;*/
+  /*justify-content: center;*/
+  top: 30%;
+  width: 225px;
+  height: 100px;
+}
+
+#introName p span{
+  padding-bottom: 50px;
+  display: inline-block;
+}
+
+#topText{
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
