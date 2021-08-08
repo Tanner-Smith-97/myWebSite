@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MatToolbarModule} from '@angular/material/toolbar';
+
 
 @Component({
   selector: 'app-navigation-bar',
@@ -8,6 +8,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 })
 
 export class NavigationBarComponent implements OnInit {
+  menuTrigger: any;
   constructor() { }
   ngOnInit(): void {
   }

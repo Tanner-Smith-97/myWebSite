@@ -14,8 +14,10 @@ import {MatExpansionModule} from "@angular/material/expansion";
 import {MatListModule} from "@angular/material/list";
 import {_MatMenuDirectivesModule, MatMenuModule} from "@angular/material/menu";
 import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
-import { AboutMeComponent } from './about-me/about-me.component';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutMeComponent } from './pages/about-me/about-me.component';
+import { Itec1018Component } from './pages/courses/itec1018/itec1018.component';
+import { CourseWorkComponent } from './pages/course-work/course-work.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { AboutMeComponent } from './about-me/about-me.component';
     NavigationBarComponent,
     HeaderComponent,
     HomeComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    Itec1018Component,
+    CourseWorkComponent
   ],
   imports: [
     BrowserModule,
