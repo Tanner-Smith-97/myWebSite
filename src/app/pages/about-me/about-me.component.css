@@ -1,0 +1,25 @@
+/*.main{*/
+/*  font-size: large;*/
+/*  color: white;*/
+/*  margin-top: 5%;*/
+/*  margin-left: 10%;*/
+/*}*/
+
+
+/*@media screen and (min-width: 1000px) {*/
+/*  .content{*/
+/*    display: flex;*/
+/*  }*/
+
+/*  .block{*/
+/*    width: 50%;*/
+/*    float: left;*/
+/*    flex: 1;*/
+/*  }*/
+/*}*/
+
+img{
+  width: 500px;
+  position: relative;
+}
+

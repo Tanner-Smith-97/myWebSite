@@ -1,0 +1,34 @@
+.content{
+  font-size: large;
+  color: white;
+  margin-top: 5%;
+  margin-left: 10%;
+  display: flex;
+}
+
+.block{
+  width: 50%;
+  float: left;
+  flex: 1;
+}
+
+img{
+  margin-top: 35px;
+}
+
+
+
+@media screen and (max-width: 786px) {
+  #mainContent{
+    /*visibility: hidden;*/
+    max-width: 40%;
+  }
+}
+
+#mainContent{
+  max-width: 786px;
+}
+
+
+
+
