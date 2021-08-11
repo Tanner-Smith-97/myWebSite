@@ -17,6 +17,7 @@
   flex: 1;
   flex-direction: row;
   flex-wrap: wrap;
+  max-width: 40%;
 }
 
 img{

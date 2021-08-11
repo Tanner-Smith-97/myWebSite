@@ -11,6 +11,7 @@ import {Sdev2210Component} from "./pages/courses/sdev2210/sdev2210.component";
 import {Sdev2220Component} from "./pages/courses/sdev2220/sdev2220.component";
 import {Sdev2410Component} from "./pages/courses/sdev2410/sdev2410.component";
 import {Sdev2420Component} from "./pages/courses/sdev2420/sdev2420.component";
+import {ContactMeComponent} from "./contact-me/contact-me.component";
 
 const routes: Routes = [
   {path: '', component: HomeComponent },
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path: 'sdev2220', component: Sdev2220Component},
   {path: 'sdev2410', component: Sdev2410Component},
   {path: 'sdev2420', component: Sdev2420Component},
+  // {path: 'contact-me', component: ContactMeComponent},
 
   //otherwise redirect to home
   {path: '**', redirectTo: '' }

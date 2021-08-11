@@ -26,6 +26,9 @@ import { Sdev2210Component } from './pages/courses/sdev2210/sdev2210.component';
 import { Sdev2220Component } from './pages/courses/sdev2220/sdev2220.component';
 import { Sdev2410Component } from './pages/courses/sdev2410/sdev2410.component';
 import { Sdev2420Component } from './pages/courses/sdev2420/sdev2420.component';
+import { TextGameComponent } from './text-game/text-game.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -45,20 +48,23 @@ import { Sdev2420Component } from './pages/courses/sdev2420/sdev2420.component';
     Sdev2210Component,
     Sdev2220Component,
     Sdev2410Component,
-    Sdev2420Component
+    Sdev2420Component,
+    TextGameComponent,
+    ContactMeComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    MatExpansionModule,
-    MatListModule,
-    _MatMenuDirectivesModule,
-    MatMenuModule,
-    appRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatButtonModule,
+        MatExpansionModule,
+        MatListModule,
+        _MatMenuDirectivesModule,
+        MatMenuModule,
+        appRoutingModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

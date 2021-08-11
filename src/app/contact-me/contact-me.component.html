@@ -1,0 +1,33 @@
+<form (ngSubmit)="submitForm()" #contactForm="ngForm">
+  <div class="field">
+    <label class="label">Name</label>
+    <input
+      type="text"
+      name="name"
+      class="input"
+      [(ngModel)]="name"
+      #nameInput="ngModel"
+      required>
+    <div
+      class="help is-error"
+      *ngIf="nameInput.invalid && nameInput.touched">
+      Your name is required
+    </div>
+  </div>
+  <div class="field">
+    <label class="label">Email</label>
+    <input type="email" name="email" class="input" [(ngModel)]="email" #emailInput="ngModel" required>
+    <div class="help is-error" *ngIf="emailInput.invalid && emailInput.touched">Your Email is required and needs to be a valid email</div>
+  </div>
+  <div class="field">
+    <label class="label">Your Message</label>
+    <textarea name="message" class="textarea" [(ngModel)]="message" #messageInput="ngModel" required></textarea>
+    <div class="help is-error" *ngIf="messageInput.invalid && messageInput.touched">A message is required</div>
+  </div>
+  <button
+    type="submit"
+    class="button is-large is-warning"
+    [disabled]="contactForm.invalid">
+    send!
+  </button>
+</form>
