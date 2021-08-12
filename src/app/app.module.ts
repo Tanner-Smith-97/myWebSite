@@ -29,6 +29,7 @@ import { Sdev2420Component } from './pages/courses/sdev2420/sdev2420.component';
 import { TextGameComponent } from './text-game/text-game.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import {FormsModule} from "@angular/forms";
+import { Sdev2110Component } from './pages/courses/sdev2110/sdev2110.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import {FormsModule} from "@angular/forms";
     Sdev2410Component,
     Sdev2420Component,
     TextGameComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    Sdev2110Component
   ],
     imports: [
         BrowserModule,

@@ -7,6 +7,7 @@ import {Sdev1022Component} from "./pages/courses/sdev1022/sdev1022.component";
 import {Sdev1041Component} from "./pages/courses/sdev1041/sdev1041.component";
 import {Sdev1060Component} from "./pages/courses/sdev1060/sdev1060.component";
 import {Sdev1090Component} from "./pages/courses/sdev1090/sdev1090.component";
+import {Sdev2110Component} from "./pages/courses/sdev2110/sdev2110.component";
 import {Sdev2210Component} from "./pages/courses/sdev2210/sdev2210.component";
 import {Sdev2220Component} from "./pages/courses/sdev2220/sdev2220.component";
 import {Sdev2410Component} from "./pages/courses/sdev2410/sdev2410.component";
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'sdev1041', component: Sdev1041Component},
   {path: 'sdev1060', component: Sdev1060Component},
   {path: 'sdev1090', component: Sdev1090Component},
+  {path: 'sdev2110', component: Sdev2110Component},
   {path: 'sdev2210', component: Sdev2210Component},
   {path: 'sdev2220', component: Sdev2220Component},
   {path: 'sdev2410', component: Sdev2410Component},
