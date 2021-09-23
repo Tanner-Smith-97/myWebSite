@@ -1,0 +1,56 @@
+label{
+  color: white;
+}
+
+.container{
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.item{
+  align-self: auto;
+}
+
+mat-form-field{
+  width: 100%;
+}
+
+
+/*form{*/
+/*  margin-top: 50px;*/
+/*}*/
+
+/*.contactMe{*/
+/*  margin-top: 20px;*/
+/*  color: white;*/
+/*  text-align: center;*/
+/*  !*size: auto;*!*/
+/*  !*position: relative;*!*/
+/*  !*justify-content: center;*!*/
+/*  !*top: 50%;*!*/
+/*  width: 30%;*/
+/*  height: 400px;*/
+/*  !*background-color: #50dfb3;*!*/
+/*  !*background-color: black;*!*/
+/*}*/
+
+/*.headerContainer{*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
+
+
+
+/*!*Angular component forms*!*/
+/*.example-form {*/
+/*  min-width: 150px;*/
+/*  max-width: 500px;*/
+/*  width: 100%;*/
+/*  background-color: #50dfb3;*/
+/*}*/
+
+/*.example-full-width {*/
+/*  width: 100%;*/
+/*}*/

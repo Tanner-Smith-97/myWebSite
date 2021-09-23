@@ -4,11 +4,13 @@
   <button class="mat-focus-indicator" docs-button mat-button mat-button-base routerLink="/about-me">ABOUT ME</button>
   <span class="navSpacer">/</span>
 
+
   <button class="mat-focus-indicator" mat-button mat-button-base [matMenuTriggerFor]="menu"
-          #menuTrigger="matMenuTrigger" (mouseover)="menuTrigger.openMenu()">COURSE WORK
+          #menuTrigger="matMenuTrigger" (mouseover)="menuTrigger.openMenu()" routerLink="/course-work">COURSE WORK
   </button>
   <mat-menu #menu="matMenu" [overlapTrigger]="false">
         <span (mouseleave)="menuTrigger.closeMenu()">
+    <button mat-menu-item routerLink="course-work">Course Work</button>
     <button mat-menu-item routerLink="/itec1018">1018 Linux Essentials</button>
     <button mat-menu-item routerLink="/sdev1022">SDEV 1022 HTML/CSS Basics</button>
     <button mat-menu-item routerLink="/sdev1041">SDEV 1041 SQL Programming Fundamentals</button>
@@ -22,10 +24,25 @@
         </span>
   </mat-menu>
 
+
   <span class="navSpacer">/</span>
-  <button class="mat-focus-indicator" docs-button mat-button mat-button-base routerLink="/course-work">BLOG</button>
+  <!--  <button class="mat-focus-indicator" docs-button mat-button mat-button-base routerLink="/projects-home">PROJECTS</button>-->
+
+
+  <button class="mat-focus-indicator" mat-button mat-button-base [matMenuTriggerFor]="projects"
+          #menuTriggerProj="matMenuTrigger" (mouseover)="menuTriggerProj.openMenu()" routerLink="/course-work">PROJECTS
+  </button>
+  <mat-menu #projects="matMenu" [overlapTrigger]="false">
+        <span (mouseleave)="menuTriggerProj.closeMenu()">
+    <button mat-menu-item routerLink="/text-game">Text Game</button>
+    <button mat-menu-item routerLink="/sdev1022">Discord Bot</button>
+        </span>
+  </mat-menu>
+
+
   <span class="navSpacer">/</span>
-  <button class="mat-focus-indicator" docs-button mat-button mat-button-base routerLink="/contact-me">CONTACT ME</button>
+  <button class="mat-focus-indicator" docs-button mat-button mat-button-base routerLink="/contact-me">CONTACT ME
+  </button>
 
   <span class="example-spacer"></span>
   <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">

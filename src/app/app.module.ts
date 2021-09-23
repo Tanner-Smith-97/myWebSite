@@ -28,8 +28,12 @@ import { Sdev2410Component } from './pages/courses/sdev2410/sdev2410.component';
 import { Sdev2420Component } from './pages/courses/sdev2420/sdev2420.component';
 import { TextGameComponent } from './text-game/text-game.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { Sdev2110Component } from './pages/courses/sdev2110/sdev2110.component';
+import {MatInputModule} from "@angular/material/input";
+import { ProjectsHomeComponent } from './projects/projects-home/projects-home.component';
+import {MatTabsModule} from "@angular/material/tabs";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -52,7 +56,8 @@ import { Sdev2110Component } from './pages/courses/sdev2110/sdev2110.component';
     Sdev2420Component,
     TextGameComponent,
     ContactMeComponent,
-    Sdev2110Component
+    Sdev2110Component,
+    ProjectsHomeComponent
   ],
     imports: [
         BrowserModule,
@@ -65,9 +70,15 @@ import { Sdev2110Component } from './pages/courses/sdev2110/sdev2110.component';
         _MatMenuDirectivesModule,
         MatMenuModule,
         appRoutingModule,
-        FormsModule
+        FormsModule,
+        ReactiveFormsModule,
+        MatInputModule,
+        MatTabsModule,
+        HttpClientModule
     ],
-  providers: [],
+  providers: [
+    HttpClientModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
