@@ -34,6 +34,12 @@ import {MatInputModule} from "@angular/material/input";
 import { ProjectsHomeComponent } from './projects/projects-home/projects-home.component';
 import {MatTabsModule} from "@angular/material/tabs";
 import {HttpClientModule} from "@angular/common/http";
+import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.component';
+import {MatCardModule} from "@angular/material/card";
+import {MatRadioModule} from "@angular/material/radio";
+import {MatSliderModule} from "@angular/material/slider";
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
+import {MatDialogModule} from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
@@ -57,25 +63,31 @@ import {HttpClientModule} from "@angular/common/http";
     TextGameComponent,
     ContactMeComponent,
     Sdev2110Component,
-    ProjectsHomeComponent
+    ProjectsHomeComponent,
+    ProgressSpinnerComponent
   ],
-    imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
-        MatToolbarModule,
-        MatIconModule,
-        MatButtonModule,
-        MatExpansionModule,
-        MatListModule,
-        _MatMenuDirectivesModule,
-        MatMenuModule,
-        appRoutingModule,
-        FormsModule,
-        ReactiveFormsModule,
-        MatInputModule,
-        MatTabsModule,
-        HttpClientModule
-    ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatExpansionModule,
+    MatListModule,
+    _MatMenuDirectivesModule,
+    MatMenuModule,
+    appRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatTabsModule,
+    HttpClientModule,
+    MatCardModule,
+    MatRadioModule,
+    MatSliderModule,
+    MatProgressSpinnerModule,
+    MatDialogModule
+  ],
   providers: [
     HttpClientModule
   ],

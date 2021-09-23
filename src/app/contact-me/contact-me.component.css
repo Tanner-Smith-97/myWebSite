@@ -16,6 +16,10 @@ mat-form-field{
   width: 100%;
 }
 
+#emailHelp{
+  margin-left: 5%;
+}
+
 
 /*form{*/
 /*  margin-top: 50px;*/

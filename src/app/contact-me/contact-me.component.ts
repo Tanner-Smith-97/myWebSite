@@ -5,6 +5,8 @@ import {ContactService} from "./contact.service";
 import {error} from "@angular/compiler/src/util";
 import {HttpClient} from "@angular/common/http";
 import {connect, Email} from "node-mailjet";
+import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import {ProgressSpinnerComponent} from "../progress-spinner/progress-spinner.component";
 
 
 @Component({
@@ -22,9 +24,11 @@ export class ContactMeComponent implements OnInit {
   email: string = "";
   message: string = "";
 
+
   constructor(private builder: FormBuilder,
               private contact: ContactService,
-              private httpClient: HttpClient) {
+              private httpClient: HttpClient,
+              private dialog: MatDialog) {
   }
 
   ngOnInit(): void {
@@ -36,46 +40,17 @@ export class ContactMeComponent implements OnInit {
   }
 
   onSubmit() {
-    //this.FormData.get([this.name, this.email, this.message]);
 
-    //console.log(this.FormData.value.Email);
-
-    this.contact.PostMessage({
-      "Email": this.FormData.value.Email,
-      "Name": this.FormData.value.Fullname,
-      "Content": this.FormData.value.Comment
-    })
-      .subscribe();
+    // const spinner = this.dialog.open(ProgressSpinnerComponent);
+    //
+    // this.contact.PostMessage({
+    //   "Email": this.FormData.value.Email,
+    //   "Name": this.FormData.value.Fullname,
+    //   "Content": this.FormData.value.Comment
+    // })
+    //   .subscribe(() => {
+    //     spinner.close();
+    //     this.FormData.reset();
+    //   });
   }
-
-
-
-
-
-  // onSubmit(FormData: any) {
-  //   console.log(FormData);
-  //   this.contact.PostMessage(FormData)
-  //     .subscribe(response => {
-  //         location.href = 'https://mailthis.to/confirm';
-  //         console.log(response);
-  //       }, error => {
-  //         console.warn(error.reponseText);
-  //         console.log([{error}])
-  //       }
-  //     )
-  // }
-
-
-  // submitForm(){
-  //   const message = `My name is ${this.name}. My email is ${this.email}. My message is ${this.message}`;
-  //   alert(message)
-  // }
-  //
-  // emailFormControl = new FormControl('', [
-  //   Validators.required,
-  //   Validators.email,
-  // ]);
-
-  // matcher = new MyErrorStateMatcher();
-
 }
