@@ -1,1 +1,9 @@
-<p>text-game works!</p>
+<div class="feedback"></div>
+<div class="buttons">
+  <button mat-raised-button color="accent" value="wood" id="gather" (click)="getStuff($event)">Get Stuffs</button>
+</div>
+
+<div class="stores">
+  <p class="wood visible">Wood: {{game.currentPlayer.playersStores.wood}}</p>
+  <p class="fur visible">Fur: {{game.currentPlayer.playersStores.fur}}</p>
+</div>

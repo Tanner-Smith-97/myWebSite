@@ -1,4 +1,4 @@
-class Village{
+export class Village{
   constructor() {
     let baitedTrap = 0;
     let cart = 0;
