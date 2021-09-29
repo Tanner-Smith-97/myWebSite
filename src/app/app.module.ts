@@ -40,6 +40,8 @@ import {MatRadioModule} from "@angular/material/radio";
 import {MatSliderModule} from "@angular/material/slider";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import {MatDialogModule} from "@angular/material/dialog";
+import { DiscordBotComponent } from './projects/discord-bot/discord-bot.component';
+import { SDEV1040Component } from './pages/courses/sdev1040/sdev1040.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +66,9 @@ import {MatDialogModule} from "@angular/material/dialog";
     ContactMeComponent,
     Sdev2110Component,
     ProjectsHomeComponent,
-    ProgressSpinnerComponent
+    ProgressSpinnerComponent,
+    DiscordBotComponent,
+    SDEV1040Component
   ],
   imports: [
     BrowserModule,

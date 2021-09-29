@@ -20,6 +20,23 @@
   max-width: 40%;
 }
 
+/*todo fix the flex box*/
+/*.content{*/
+/*  margin-top: 5%;*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*}*/
+
+/*.block{*/
+/*  align-self: auto;*/
+/*  !*width: 50%;*!*/
+/*  max-width: 50%;*/
+/*}*/
+
+
+
+
+
 img{
   margin-top: 35px;
 }

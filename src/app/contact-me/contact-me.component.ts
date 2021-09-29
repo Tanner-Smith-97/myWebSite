@@ -41,16 +41,16 @@ export class ContactMeComponent implements OnInit {
 
   onSubmit() {
 
-    // const spinner = this.dialog.open(ProgressSpinnerComponent);
-    //
-    // this.contact.PostMessage({
-    //   "Email": this.FormData.value.Email,
-    //   "Name": this.FormData.value.Fullname,
-    //   "Content": this.FormData.value.Comment
-    // })
-    //   .subscribe(() => {
-    //     spinner.close();
-    //     this.FormData.reset();
-    //   });
+    const spinner = this.dialog.open(ProgressSpinnerComponent);
+
+    this.contact.PostMessage({
+      "Email": this.FormData.value.Email,
+      "Name": this.FormData.value.Fullname,
+      "Content": this.FormData.value.Comment
+    })
+      .subscribe(() => {
+        spinner.close();
+        this.FormData.reset();
+      });
   }
 }

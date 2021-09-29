@@ -5,6 +5,7 @@ import {HomeComponent} from "./pages/home/home.component";
 import {CourseWorkComponent} from "./pages/course-work/course-work.component";
 import {Sdev1022Component} from "./pages/courses/sdev1022/sdev1022.component";
 import {Sdev1041Component} from "./pages/courses/sdev1041/sdev1041.component";
+import {SDEV1040Component} from "./pages/courses/sdev1040/sdev1040.component";
 import {Sdev1060Component} from "./pages/courses/sdev1060/sdev1060.component";
 import {Sdev1090Component} from "./pages/courses/sdev1090/sdev1090.component";
 import {Sdev2110Component} from "./pages/courses/sdev2110/sdev2110.component";
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'course-work', component: CourseWorkComponent},
   {path: 'itec1018', component: Itec1018Component},
   {path: 'sdev1022', component: Sdev1022Component},
+  {path: 'sdev1040', component: SDEV1040Component},
   {path: 'sdev1041', component: Sdev1041Component},
   {path: 'sdev1060', component: Sdev1060Component},
   {path: 'sdev1090', component: Sdev1090Component},
